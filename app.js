@@ -1,10 +1,9 @@
-let colors = ['red','orange','yellow','green'];
+let shoppingList = ['Cheddar Cheese','2% Milk'];
 
-colors.length //4
+shoppingList[1] = 'Whole Milk';
 
-colors[0] //red
-colors[1] //orange
-colors[2] // yellow
-colors[3] //green
-colors[4] //undefined
+shoppingList[2] = 'Ice Cream';
+
+shoppingList[shoppingList.length] = 'Tomatoes';
+shoppingList[shoppingList.length] = 'Potatoes';
 

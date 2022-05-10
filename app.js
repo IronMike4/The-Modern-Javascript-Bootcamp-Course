@@ -1,21 +1,9 @@
-let dishesToDo = ['big platter'];
+let fruits = ['apples','banana'];
+let veggies = ['spinach','cabbage'];
+let meats = ['steak', 'chicken breast'];
 
-dishesToDo.unshift('large plate');
+console.log(fruits.concat(veggies));
+console.log(veggies.concat(fruits));
 
-dishesToDo.unshift('small plate');
-
-dishesToDo.unshift('cereal bowl');
-
-dishesToDo.unshift('mug');
-
-dishesToDo.unshift('dirty spoon');
-
-
-dishesToDo.shift();
-
-dishesToDo.shift();
-
-dishesToDo.shift();
-
-dishesToDo.unshift('fork','knife');
-
+let allFood = fruits.concat(veggies, meats);
+console.log(allFood);

@@ -1,10 +1,7 @@
 let animals = ['shark','salmon','whale','bear','lizard','tortoise'];
 
+animals.splice(1,0,'octopus');
 
-let swimmers = animals.slice(0,3);
+animals.splice(3,2);
 
-let mammals = animals.slice(2,4);
-
-let reptiles = animals.slice(4);
-
-let quadruped = animals.slice(-3);
+animals.splice(0,2,'SHARK','OCTOPUS');

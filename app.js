@@ -1,9 +1,18 @@
-let fruits = ['apples','banana'];
-let veggies = ['spinach','cabbage'];
-let meats = ['steak', 'chicken breast'];
+let ingredients = [
+    'water',
+    'corn starch',
+    'flour',
+    'cheese',
+    'brown suger',
+    'shrimp',
+    'eel',
+    'butter'
+];
 
-console.log(fruits.concat(veggies));
-console.log(veggies.concat(fruits));
+ingredients.includes('fish');
 
-let allFood = fruits.concat(veggies, meats);
-console.log(allFood);
+if(ingredients.includes('flour')){
+    console.log('I am gluten frameElement, I cannot eat that!');
+}
+
+ingredients.indexOf('eel');

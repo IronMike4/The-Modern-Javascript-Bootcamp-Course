@@ -1,9 +1,11 @@
-let shoppingList = ['Cheddar Cheese','2% Milk'];
+let topSongs = [
+    'First Time Ever I Saw Your Face',
+    'God Only Knows',
+    'A Day In The Life',
+    'Life On Mars'
+];
 
-shoppingList[1] = 'Whole Milk';
+topSongs.push('Fortunate Son');
+topSongs.push(true);
 
-shoppingList[2] = 'Ice Cream';
-
-shoppingList[shoppingList.length] = 'Tomatoes';
-shoppingList[shoppingList.length] = 'Potatoes';
-
+topSongs.pop();

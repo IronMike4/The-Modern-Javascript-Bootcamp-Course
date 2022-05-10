@@ -1,3 +1,5 @@
-let people = ['Mrs. Robsinson','Angie','Jolene','Maggie May','Roxanne'];
-
-people.sort();
+const board = [
+    ['0',null,'X'],
+    [null, 'X','0'],
+    ['X','0',null]
+]

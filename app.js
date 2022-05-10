@@ -1,14 +1,16 @@
-let age = 30;
+let loggedInUser = 'Iwe';
 
-if(age < 6 || age >= 65){
-    console.log('You get in for free!');
+// If there isn't a logged in user
+
+if(!loggedInUser){
+    console.log('Get out of here!');
 }
-else {
-    console.log('That will be $10 please');
+
+let flavor = 'banana';
+if(flavor !== 'grape' && flavor !== 'cherry') {
+    console.log("We don't have that flavor!");
 }
 
-
-let color = 'violet';
-if(color === 'purple' || color === 'lilac' || color === 'violet') {
-    console.log('GREAT CHOICE!');
+if(!(flavor === 'grape' || flavor === 'cherry')){
+    console.log('Not one of the flavors');
 }

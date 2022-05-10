@@ -1,17 +1,14 @@
-let password = 'taco tuesday';
+let age = 30;
 
-if(password.length >= 6 && password.indexOf(' ') === -1){
-    console.log('Valid Password!');
+if(age < 6 || age >= 65){
+    console.log('You get in for free!');
 }
 else {
-    console.log('Invalid Password!');
+    console.log('That will be $10 please');
 }
 
-let num = 99;
 
-if(num >= 1 && num <= 10){
-    console.log('Number is between 1 and 10');
-}
-else {
-    console.log('Please guess a number between 1 and 10');
+let color = 'violet';
+if(color === 'purple' || color === 'lilac' || color === 'violet') {
+    console.log('GREAT CHOICE!');
 }

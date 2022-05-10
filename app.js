@@ -1,11 +1,21 @@
-let topSongs = [
-    'First Time Ever I Saw Your Face',
-    'God Only Knows',
-    'A Day In The Life',
-    'Life On Mars'
-];
+let dishesToDo = ['big platter'];
 
-topSongs.push('Fortunate Son');
-topSongs.push(true);
+dishesToDo.unshift('large plate');
 
-topSongs.pop();
+dishesToDo.unshift('small plate');
+
+dishesToDo.unshift('cereal bowl');
+
+dishesToDo.unshift('mug');
+
+dishesToDo.unshift('dirty spoon');
+
+
+dishesToDo.shift();
+
+dishesToDo.shift();
+
+dishesToDo.shift();
+
+dishesToDo.unshift('fork','knife');
+

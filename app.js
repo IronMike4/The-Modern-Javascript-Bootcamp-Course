@@ -1,11 +1,13 @@
-const userReviews = {};
+const student = {
+    firstName : 'David',
+    lastName : 'Jones',
+    strengths : ['Music','Art'],
+    exams : {
+        midterm : 92,
+        final : 88
+    }
+};
 
-userReviews['queenBee49'] = 4.0;
+const avg = (student.exams.midterm + student.exams.final) / 2;
 
-userReviews.mrSmith78 = 3.5;
-
-userReviews['queenBee49'] += 2;
-
-userReviews.mrSmith78 += 3;
-
-userReviews.mrSmith78++;
+student.strengths[1]

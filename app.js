@@ -1,13 +1,7 @@
-const student = {
-    firstName : 'David',
-    lastName : 'Jones',
-    strengths : ['Music','Art'],
-    exams : {
-        midterm : 92,
-        final : 88
-    }
-};
+let nums = [ 1, 2, 3];
+let mystery = [1, 2, 3];
+let moreNums = nums;
 
-const avg = (student.exams.midterm + student.exams.final) / 2;
-
-student.strengths[1]
+// Not equal because they are stored in different references
+nums === mystery;
+moreNums === nums;

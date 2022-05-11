@@ -1,7 +1,11 @@
-const numbers = {
-    100 : 'one hundred',
-    16 : 'sixteen',
-    '76 trombones': 'great song!'
-};
+const userReviews = {};
 
-numbers[100]
+userReviews['queenBee49'] = 4.0;
+
+userReviews.mrSmith78 = 3.5;
+
+userReviews['queenBee49'] += 2;
+
+userReviews.mrSmith78 += 3;
+
+userReviews.mrSmith78++;

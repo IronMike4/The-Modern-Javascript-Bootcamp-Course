@@ -1,9 +1,9 @@
-for(let i = 0; i <= 5; i++){
-    console.log(i);
+const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+while(guess !== target){
+    console.log(`Target: ${target} Guess: ${guess}`);
+    guess = Math.floor(Math.random() * 10); 
 }
+console.log(`Target: ${target} Guess: ${guess}`);
+console.log(`CONGRATS YOU WIN!`);
 
-let j = 0;
-while (j <= 5){
-    console.log(j);
-    j++;
-}

@@ -1,35 +1,27 @@
-function callThreeTimes(f){
-    f();
-    f();
-    f();
-}
+// function multiplyBy(num){
+//     return function(x){
+//     return x * num;   
+//     }
+// }
 
-function cry(){
-    console.log("BOO HOO I'M SO SAD!");
-}
+// const triple = multiplyBy(3);
+// const double = multiplyBy(2);
+// const halve = multiplyBy(0.5);
 
-function rage(){
-    console.log("I Hate Everything!");
-}
-callThreeTimes(cry);
-callThreeTimes(rage);
-
-function repeatNTimes(action, num){
-for (let i = 0; i < num; i++)
-    action();
-}
-// repeatNTimes(rage,13);
-
-
-function pickOne (f1,f2){
-    let rand = Math.random();
-    console.log(rand);
-    if(rand < 0.5){
-        f1();
+function makeBetweenFunc(x,y){
+    return function(num){
+        return num >= x && num <= y
     }
-    else{
-        f2();
-    }
-    pickOne(cry, rage)
 }
-pickOne(cry, rage)
+
+// makeBetweenFunc(0,18);
+
+    // const isChild = function(num){
+    //     return num >= 0 && num <= 18;
+    // }
+
+    // isChild(17) // true
+    // isChild(80) // false
+
+const isChild = makeBetweenFunc(0,18);
+const isNineties = makeBetweenFunc(1990,2000);

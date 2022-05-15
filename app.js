@@ -4,13 +4,13 @@ function rollDie(){
 }
 rollDie();
 
-function throwDice(){
-    rollDie();
-    rollDie();
-    rollDie();
-    rollDie();
-    rollDie();
-    rollDie();
+function throwDice(numRolls){
+    for(let i = 0; i < numRolls; i++)
+    rollDie()    
 }
 
-throwDice();
+function greet(nickname){
+    console.log(`Hi, ${nickname}!`);
+}
+
+greet('Mike');

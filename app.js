@@ -1,22 +1,17 @@
-const movieReviews = {
-    Arrival:9.5,
-    Alien: 9,
-    Amelie:8,
-    'In Bruges':9,
-    Amadeus: 10,
-    'Kill Bill':8,
-    'Little Miss Sunshine':8.5,
-    Caraline: 7.5
+const jeopardyWinnings = {
+    regularPlay : 2522700,
+    watsonChallenge: 300000,
+    tounamentOfChampions: 500000,
+    battleOfTheDecades: 100000
 };
 
-for (let movie of Object.keys(movieReviews)){
-    console.log(movie, movieReviews[movie]);
+for(let prop in jeopardyWinnings){
+    console.log(prop);
+    console.log(jeopardyWinnings[prop]);
 }
 
-const ratings = Object.values(movieReviews);
 let total = 0;
-for (let r of ratings){
-    total += r;
+for(let prop in jeopardyWinnings){
+    total += jeopardyWinnings[prop];
 }
-let avg = total / ratings.length;
-console.log(avg);
+console.log(`Ken Jennings Total Earnings: ${total}`);

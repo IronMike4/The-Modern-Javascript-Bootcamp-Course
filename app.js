@@ -1,56 +1,16 @@
-// Write an isValidPassword function 
-// It accepts 2 arguments: password and username
-// Password must:
-// - be at least 8 characters
-// - cannot contain spaces
-// - cannot contain the username
-// If all requirements are met , return true
-// Otherwise: false
+// Write a function to find the average value in an array of numbers 
+// avg([0,50])  //25
+// avg([75,76,80,95,100]) //85.2
 
-// isValidPassword('89Fjjlnms', 'dogLuvr'); // true
-
-// isValidPassword('dogLuvr123!','dogLuvr') // false
-
-// function isValidPassword(password, username){
-//     if(password.length < 8){
-//         return false;
-//     }
-//     if(password.indexOf(' ') !== -1){
-//         return false;
-//     }
-//     if(password.indexOf(username) !== -1){
-//         return false;
-//     }
-//     return true;
-// }
-
-// function isValidPassword(password, username){
-//     if((password.length < 8) || (password.indexOf(' ') !== -1) || (password.indexOf(username) !== -1))
-//     {
-//         return false;
-//     }
-//     return true;
-// }
-
-// function isValidPassword(password, username){
-//     const tooShort = password.length < 8;
-//     const hasSpace = password.indexOf(' ') !== -1;
-//     const tooSimilar = password.indexOf(username) !== -1;
-//     if(tooShort || hasSpace || tooSimilar) return false;
-//     return true;
-// }
-
-// function isValidPassword(password, username){
-//     const tooShort = password.length < 8;
-//     const hasSpace = password.indexOf(' ') !== -1;
-//     const tooSimilar = password.indexOf(username) !== -1;
-//     if(!tooShort && !hasSpace && !tooSimilar) return true;
-//     return false;
-// }
-
-function isValidPassword(password, username){
-    const tooShort = password.length < 8;
-    const hasSpace = password.indexOf(' ') !== -1;
-    const tooSimilar = password.indexOf(username) !== -1;
-    return !tooShort && !hasSpace && !tooSimilar;
+function avg(arr){
+    let total = 0;
+    // loop over each num
+    for(let num of arr){
+         // add them together
+        total += num;
+    }
+    // divide by number of nums
+    // let res = total / arr.length;
+    // return res;
+    return total / arr.length;
 }

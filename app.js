@@ -1,17 +1,13 @@
-const jeopardyWinnings = {
-    regularPlay : 2522700,
-    watsonChallenge: 300000,
-    tounamentOfChampions: 500000,
-    battleOfTheDecades: 100000
-};
-
-for(let prop in jeopardyWinnings){
-    console.log(prop);
-    console.log(jeopardyWinnings[prop]);
+function grumpus(){
+    console.log('ugh...you again...');
+    console.log('FOR THE LAST TIME...');
+    console.log('LEAVE ME ALONE!!!');
 }
 
-let total = 0;
-for(let prop in jeopardyWinnings){
-    total += jeopardyWinnings[prop];
+grumpus();
+grumpus();
+grumpus();
+
+for (let i = 0; i < 50; i++){
+    grumpus();
 }
-console.log(`Ken Jennings Total Earnings: ${total}`);

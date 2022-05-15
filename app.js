@@ -1,16 +1,11 @@
-function rollDie(){
-    let roll = Math.floor(Math.random() * 6) + 1;
-    console.log(`Rolled: ${roll}`);
-}
-rollDie();
-
-function throwDice(numRolls){
-    for(let i = 0; i < numRolls; i++)
-    rollDie()    
+function square(num){
+    console.log(num * num);
 }
 
-function greet(nickname){
-    console.log(`Hi, ${nickname}!`);
+function sum(x, y){
+    console.log(x + y);
 }
 
-greet('Mike');
+function divide(a,b){
+    console.log(a/b);
+}

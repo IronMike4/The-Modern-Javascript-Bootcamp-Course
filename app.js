@@ -1,26 +1,35 @@
-function add(x,y){
-    return x+y;
+function callThreeTimes(f){
+    f();
+    f();
+    f();
 }
 
-const subtract = function(x,y){
-    return x-y;
+function cry(){
+    console.log("BOO HOO I'M SO SAD!");
 }
 
-function multiply(x,y){
-    return x*y;
+function rage(){
+    console.log("I Hate Everything!");
 }
+callThreeTimes(cry);
+callThreeTimes(rage);
 
-const divide = function(x,y){
-    return x / y;
+function repeatNTimes(action, num){
+for (let i = 0; i < num; i++)
+    action();
 }
+// repeatNTimes(rage,13);
 
-const operations = [add,subtract,multiply,divide];
 
-for(let func of operations){
-   let result = func(30,5);
-   console.log(result);
+function pickOne (f1,f2){
+    let rand = Math.random();
+    console.log(rand);
+    if(rand < 0.5){
+        f1();
+    }
+    else{
+        f2();
+    }
+    pickOne(cry, rage)
 }
-
-const thing = {
-    doSomething: multiply
-}
+pickOne(cry, rage)

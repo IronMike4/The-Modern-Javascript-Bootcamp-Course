@@ -1,27 +1,12 @@
-// function multiplyBy(num){
-//     return function(x){
-//     return x * num;   
-//     }
+// function grumpus(){
+//     alert("GAHHH GO AWAY")
 // }
 
-// const triple = multiplyBy(3);
-// const double = multiplyBy(2);
-// const halve = multiplyBy(0.5);
+// setTimeout(function(){
+//     alert("Welcome!")
+// }, 5000);
 
-function makeBetweenFunc(x,y){
-    return function(num){
-        return num >= x && num <= y
-    }
-}
-
-// makeBetweenFunc(0,18);
-
-    // const isChild = function(num){
-    //     return num >= 0 && num <= 18;
-    // }
-
-    // isChild(17) // true
-    // isChild(80) // false
-
-const isChild = makeBetweenFunc(0,18);
-const isNineties = makeBetweenFunc(1990,2000);
+const btn = document.querySelector('button');
+btn.addEventListener('click',function(){
+    alert("WHY DID YOU CLICK ME!!")
+})

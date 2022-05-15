@@ -1,39 +1,36 @@
-// Write a getCard() function which returns a random playing card object, like:
-// {
-//     value :'K'
-//     suit: 'clubs'
+// if(true) {
+//     const animal = 'eel';
+//     console.log(animal);
 // }
-// Pick a random value from:
-// -----1,2,3,4,5,6,7,8,9,10,J,Q,K,A
-// Pick a random suit from:
-// -----clubs, spades, hearts, diamonds
-// Return both in an object 
+// console.log(animal);
 
-// function getCard(){
-//    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
-//    const valIdx = Math.floor(Math.random() * values.length);
-//    const value = values[valIdx];
 
-//    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
-//    const suitIdx = Math.floor(Math.random() * suits.length);
-//    const suit = suits[suitIdx];
-//    return {value: value, suit:suit};
+// if(true) {
+//     var animal = 'eel';
+//     console.log(animal);
 // }
+// console.log(animal);
 
-function pick(arr){
-    const idx = Math.floor(Math.random() * arr.length);
-    return arr[idx];
-}
-// function getCard(){
-//    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
-//    const value = pick(values);
-  
-//    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
-//    const suit = pick(suits)
-//    return {value: value, suit:suit};
+// let animals = ['grizzly bear','panda bear','spectacled bear'];
+// var i = 10;
+// for (var i = 0; i < animals.length; i++){
+//     console.log(i, animals[i])
+// }
+// console.log(i);
 
-function getCard(){
-    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
-    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
-    return{value: pick(values), suit: pick(suits)};
+// let animals = ['grizzly bear','panda bear','spectacled bear'];
+// let i = 10;
+// for (let i = 0; i < animals.length; i++){
+//     console.log(i, animals[i])
+// }
+// console.log(i);
+
+function doubleArr(arr){
+    const result = [];
+    for (let num of arr){
+        var double = num * 2;
+        result.push(double);
+    }
+    console.log(double);
+    return result;
 }

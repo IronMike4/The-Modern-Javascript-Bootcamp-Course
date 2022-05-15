@@ -1,12 +1,17 @@
-// function grumpus(){
-//     alert("GAHHH GO AWAY")
+// console.log(animal);
+// var animal = 'Tapir';
+
+// console.log(shrimp);
+// let shrimp = 'Harlequin Shrimp';
+
+// how();
+// function how(){
+//     console.log("Awoooo");
 // }
 
-// setTimeout(function(){
-//     alert("Welcome!")
-// }, 5000);
+hoot();
+var hoot = function (){
+    console.log('Hoooo Hoooo')
+}
 
-const btn = document.querySelector('button');
-btn.addEventListener('click',function(){
-    alert("WHY DID YOU CLICK ME!!")
-})
+

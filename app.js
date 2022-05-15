@@ -1,12 +1,7 @@
-function outer(){
-    let movie = 'Amadeus';
-    function inner(){
-        let movie = 'The Shining';
+function add(x,y){
+    return x+y;
+}
 
-        function extraInner(){
-        console.log(movie.toUpperCase());
-        }
-        extraInner();
-    }
-    inner();
+const sum = function(x,y){
+    return x+y;
 }

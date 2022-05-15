@@ -1,16 +1,27 @@
-// Write a function to find the average value in an array of numbers 
-// avg([0,50])  //25
-// avg([75,76,80,95,100]) //85.2
+// A pangram is a sentence that contains every letter of the alphabet, like:
+// 'The quick brown fox jumps over the lazy dog'
 
-function avg(arr){
-    let total = 0;
-    // loop over each num
-    for(let num of arr){
-         // add them together
-        total += num;
+// Write a function called isPangram, which checks to see if a given sentence contains every letter of the alphabet. Make sure you ignore string casing"
+
+// isPangram('The five boxing wizards jump quickly') //true
+// isPangram('The five boxing wizards jump quick') //false
+
+// function isPangram(sentence){
+//     let lowerCased = sentence.toLowerCase();
+//     for(let char of 'abcdefghijklmnopqrstuvwxyz'){
+//         if(lowerCased.indexOf(char) === -1){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+function isPangram(sentence){
+    let lowerCased = sentence.toLowerCase();
+    for(let char of 'abcdefghijklmnopqrstuvwxyz'){
+        if(!lowerCased.includes(char)){
+            return false;
+        }
     }
-    // divide by number of nums
-    // let res = total / arr.length;
-    // return res;
-    return total / arr.length;
+    return true;
 }

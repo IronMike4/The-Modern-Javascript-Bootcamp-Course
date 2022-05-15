@@ -1,27 +1,39 @@
-// A pangram is a sentence that contains every letter of the alphabet, like:
-// 'The quick brown fox jumps over the lazy dog'
+// Write a getCard() function which returns a random playing card object, like:
+// {
+//     value :'K'
+//     suit: 'clubs'
+// }
+// Pick a random value from:
+// -----1,2,3,4,5,6,7,8,9,10,J,Q,K,A
+// Pick a random suit from:
+// -----clubs, spades, hearts, diamonds
+// Return both in an object 
 
-// Write a function called isPangram, which checks to see if a given sentence contains every letter of the alphabet. Make sure you ignore string casing"
+// function getCard(){
+//    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
+//    const valIdx = Math.floor(Math.random() * values.length);
+//    const value = values[valIdx];
 
-// isPangram('The five boxing wizards jump quickly') //true
-// isPangram('The five boxing wizards jump quick') //false
-
-// function isPangram(sentence){
-//     let lowerCased = sentence.toLowerCase();
-//     for(let char of 'abcdefghijklmnopqrstuvwxyz'){
-//         if(lowerCased.indexOf(char) === -1){
-//             return false;
-//         }
-//     }
-//     return true;
+//    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+//    const suitIdx = Math.floor(Math.random() * suits.length);
+//    const suit = suits[suitIdx];
+//    return {value: value, suit:suit};
 // }
 
-function isPangram(sentence){
-    let lowerCased = sentence.toLowerCase();
-    for(let char of 'abcdefghijklmnopqrstuvwxyz'){
-        if(!lowerCased.includes(char)){
-            return false;
-        }
-    }
-    return true;
+function pick(arr){
+    const idx = Math.floor(Math.random() * arr.length);
+    return arr[idx];
+}
+// function getCard(){
+//    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
+//    const value = pick(values);
+  
+//    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+//    const suit = pick(suits)
+//    return {value: value, suit:suit};
+
+function getCard(){
+    const values =  ['1','2','3','4','5','6','7','8','9','10','J','Q','K','A'];
+    const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+    return{value: pick(values), suit: pick(suits)};
 }

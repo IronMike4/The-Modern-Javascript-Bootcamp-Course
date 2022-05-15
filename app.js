@@ -1,10 +1,13 @@
-const target = Math.floor(Math.random() * 10);
-let guess = Math.floor(Math.random() * 10);
-while(true){
-    if(target === guess) break
-    console.log(`Target: ${target} Guess: ${guess}`);
-    guess = Math.floor(Math.random() * 10); 
+let subreddits = ['soccer','popheads','cringe','book'];
+
+for(let i = 0; i < subreddits.length; i++){
+    console.log(subreddits[i]);
 }
 
-console.log(`Target: ${target} Guess: ${guess}`);
-console.log(`CONGRATS YOU WIN!`);
+for(let sub of subreddits){
+    console.log(sub);
+}
+
+for (let char of 'cockadoodledoo'){
+    console.log(char.toUpperCase());
+}

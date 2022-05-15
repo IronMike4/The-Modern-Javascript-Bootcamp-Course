@@ -1,27 +1,56 @@
-// Only runs upto return statement
-function square(x){
-    return x * x;
-    console.log('All Done');
-}
+// Write an isValidPassword function 
+// It accepts 2 arguments: password and username
+// Password must:
+// - be at least 8 characters
+// - cannot contain spaces
+// - cannot contain the username
+// If all requirements are met , return true
+// Otherwise: false
 
-// function isPurple(color){
-//     if(color.toLowerCase() === 'purple'){
-//         return true;
-//     }
-//     else {
+// isValidPassword('89Fjjlnms', 'dogLuvr'); // true
+
+// isValidPassword('dogLuvr123!','dogLuvr') // false
+
+// function isValidPassword(password, username){
+//     if(password.length < 8){
 //         return false;
 //     }
+//     if(password.indexOf(' ') !== -1){
+//         return false;
+//     }
+//     if(password.indexOf(username) !== -1){
+//         return false;
+//     }
+//     return true;
 // }
 
-// function isPurple(color){
-//     if(color.toLowerCase() === 'purple'){
-//         return true;
+// function isValidPassword(password, username){
+//     if((password.length < 8) || (password.indexOf(' ') !== -1) || (password.indexOf(username) !== -1))
+//     {
+//         return false;
 //     }
+//     return true;
+// }
+
+// function isValidPassword(password, username){
+//     const tooShort = password.length < 8;
+//     const hasSpace = password.indexOf(' ') !== -1;
+//     const tooSimilar = password.indexOf(username) !== -1;
+//     if(tooShort || hasSpace || tooSimilar) return false;
+//     return true;
+// }
+
+// function isValidPassword(password, username){
+//     const tooShort = password.length < 8;
+//     const hasSpace = password.indexOf(' ') !== -1;
+//     const tooSimilar = password.indexOf(username) !== -1;
+//     if(!tooShort && !hasSpace && !tooSimilar) return true;
 //     return false;
 // }
 
-function isPurple(color){
-    return color.toLowerCase() === 'purple';
+function isValidPassword(password, username){
+    const tooShort = password.length < 8;
+    const hasSpace = password.indexOf(' ') !== -1;
+    const tooSimilar = password.indexOf(username) !== -1;
+    return !tooShort && !hasSpace && !tooSimilar;
 }
-
-
